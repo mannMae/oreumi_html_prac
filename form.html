@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="./result.html" method="get">
+      <fieldset>
+        <legend>회원가입</legend>
+        <div>
+          <label for="username">
+            아이디 :
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="아이디"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label for="password">
+            비밀번호 :
+            <input
+              type="password"
+              id="password"
+              name="username"
+              placeholder="비밀번호"
+              required
+            />
+          </label>
+        </div>
+        <input type="number" name="age" min="0" max="100" />
+        <div>
+          <label for="summary"
+            >내용 :
+            <textarea
+              id="summary"
+              rows="3"
+              cols="15"
+              placeholder="내용"
+            ></textarea>
+          </label>
+        </div>
+        <div>
+          <select name="type">
+            <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option>
+            <option value="d">d</option>
+            <option value="e">e</option>
+          </select>
+        </div>
+        <div>
+          <label for="checkbox_1"
+            >음악
+            <input type="checkbox" id="checkbox_1" name="check" value="music" />
+          </label>
+          <label for="checkbox_2"
+            >미술
+            <input type="checkbox" id="checkbox_2" name="check" value="paint" />
+          </label>
+          <label for="checkbox_3"
+            >체육
+            <input
+              type="checkbox"
+              id="checkbox_3"
+              name="check"
+              value="sports"
+            />
+          </label>
+        </div>
+        <div>
+          <h5>개인정보제공동의</h5>
+          <label for="agree"
+            >동의함
+            <input type="radio" id="agree" name="privacy" value="true" />
+          </label>
+          <label for="disagree"
+            >동의하지 않음
+            <input
+              type="radio"
+              id="disagree"
+              name="privacy"
+              value="false"
+              checked
+            />
+          </label>
+        </div>
+        <div>
+          <button>등록하기</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
